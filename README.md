@@ -3,7 +3,7 @@
 [![Venue: ICRA 2026](https://img.shields.io/badge/Venue-IEEE%20ICRA%202026%20Workshop-blue.svg)](https://2026.ieee-icra.org/)
 [![Thesis: Chapter 4](https://img.shields.io/badge/PhD%20Thesis-Chapter%204-red.svg)](https://github.com/zibo-zhang-9)
 
-This repository hosts the core theoretical framework, analytical methods, and presentation materials for the **SVD-based actuation redundancy elimination method**. This work constitutes **Chapter 4** of my PhD dissertation (*Élimination et analyse de la redondance d'actionnement*) and was peer-reviewed and presented as a Workshop Poster at the **IEEE International Conference on Robotics and Automation (ICRA 2026)**, Vienna, Austria. Workshop theme: _AI-Driven Soft Robotics: Innovations, Challenges, and Future Directions_
+This repository hosts the core theoretical framework, analytical methods, and presentation materials for the **SVD-based actuation redundancy reduction method**. This work constitutes **Chapter 4** of my PhD dissertation (*Élimination et analyse de la redondance d'actionnement*) and was peer-reviewed and presented as a Workshop Poster at the **IEEE International Conference on Robotics and Automation (ICRA 2026)**, Vienna, Austria. The workshop theme is: _AI-Driven Soft Robotics: Innovations, Challenges, and Future Directions_
 
 ---
 
@@ -13,9 +13,11 @@ This repository hosts the core theoretical framework, analytical methods, and pr
 ---
 
 ## 📌 Background & Research Motivation (PhD Thesis Ch. 4)
-Tendon-Actuated Continuum Robots (TACRs) are inherently **over-actuated**. Due to the routing mechanics, the same spatial bending configuration or trajectory can be produced by an infinite combination of internal tendon tensions. This severe actuation redundancy leads to:
-1. **Mathematical Ill-posedness:** Hard to predict unique tendon inputs for shape control.
-2. **Computational Inefficiency:** Extreme overhead in multi-segment and multi-routing forward/inverse kinematic simulations.
+Tendon-Actuated Continuum Robots (TACRs) are inherently **over-actuated**. Due to the routing mechanics, the same spatial bending behaviour or trajectory can be produced by an infinite combination of internal tendon tensions. This implies actuation redundancy and may lead to:
+
+1. **Mathematical Ill-posedness:** Hard to predict unique combination of tendon inputs for shape control. Predicting the tendon actuation for a given shape becomes challenging. Tracking successive desired shapes (shape control) also becomes challenging, especially for multi-routing and multi-segment TACRs.
+
+2. **Computational Inefficiency:** Overhead in multi-segment and multi-routing forward/inverse kinematic simulations.
 
 While historical methods (such as Clarke-based reduction [1]) work well for symmetric 2D planar robots, they **completely fail when handling 3D complex torsion, large multi-segment deformations, or non-symmetric routings**.
 
