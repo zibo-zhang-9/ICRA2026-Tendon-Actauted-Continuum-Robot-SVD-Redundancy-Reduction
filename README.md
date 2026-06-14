@@ -2,17 +2,19 @@
 
 [![Venue: ICRA 2026](https://img.shields.io/badge/Venue-IEEE%20ICRA%202026%20Workshop-blue.svg)](https://2026.ieee-icra.org/)
 [![Thesis: Chapter 4](https://img.shields.io/badge/PhD%20Thesis-Chapter%204-red.svg)](https://github.com/zibo-zhang-9)
+![Field](https://img.shields.io/badge/Field-Continuum_Robotics-green)
+![Model](https://img.shields.io/badge/Model-Cosserat_Rod-orange)
 
 This repository hosts the core theoretical framework, analytical methods, and presentation materials for the **SVD-based actuation redundancy reduction method**. This work constitutes **Chapter 4** of my PhD dissertation (*Élimination et analyse de la redondance d'actionnement*) and was peer-reviewed and presented as a Workshop Poster at the **IEEE International Conference on Robotics and Automation (ICRA 2026)**, Vienna, Austria. The workshop theme is: _AI-Driven Soft Robotics: Innovations, Challenges, and Future Directions_
 
 ---
 
-## 🖼️ Workshop Poster & Graphical Abstract
+## Workshop Poster
 ![IEEE ICRA 2026 Poster](./media/Poster_SVD_Actutation_Redundancy_v2.png)
 
 ---
 
-## 📌 Background & Research Motivation (PhD Thesis Ch. 4)
+## Background & Research Motivation (PhD Thesis Ch. 4)
 Tendon-Actuated Continuum Robots (TACRs) are inherently **over-actuated**. Due to the routing mechanics, the same spatial bending behaviour or trajectory can be produced by an infinite combination of internal tendon tensions. This implies actuation redundancy and may lead to:
 
 1. **Mathematical Ill-posedness:** Hard to predict unique combination of tendon inputs for shape control. Predicting the tendon actuation for a given shape becomes challenging. Tracking successive desired shapes (shape control) also becomes challenging, especially for multi-routing and multi-segment TACRs.
@@ -23,13 +25,13 @@ While historical methods (such as Clarke Transform-based reduction [1]) work wel
 
 ---
 
-## 🚀 Key Contributions & Methodology
+## Key Contributions & Methodology
 
 To bridge this gap, buding upon the work of [2], our work introduces a unified mathematical framework using **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$). This framework enables a **Dimension Reduction:**, where the redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system. In addition, this framework remains compatitble with 3D complex routing paths and 3D trosion. It captures 3D complex deformations (bending + twisting), unlocking capabilities where classical methods [1] fail. Meanwhile, by eliminating internal tension redundancies during iterative solver steps, the simulation speed is accelerated by approximately **500%**, facilitating real-time closed-loop force/position control. Moreover, this framework demonstrated a versatile performance on multi-routing, multi-segment continuum systems. 
 
 ---
 
-## 📊 Simulation Results
+## Simulation Results
 * **Example 1 (single-segment with 3 convergent tendons):** Both Clarke and SVD work for symmetric planar routings.
 * **Example 2 (single-segment with 4 spiral tendons):** Clarke fails for torsion (3D deformation); SVD works for both 2D and 3D.
 * **Example 3 (multi-segment and multi-routing TACR):** Traditional Clarke reduction yielded a **22.33% Max Tip Error** due to missing torsional constraints. Our **SVD Method reduced the Max Tip Error to 0.36%**. SVD provides a general reduction valid for 2D, 3D, and multi-segments, while Clarke is limited to symmetric planar routings.
@@ -37,7 +39,7 @@ To bridge this gap, buding upon the work of [2], our work introduces a unified m
 * 
 ---
 
-## 🎯 Conclusion & Future Work
+## Conclusion & Future Work
 In conclusion, the proposed SVD-based framework successfully decouples effective actuation from redundant internal tensions, significantly accelerating kinematic simulations and extending mathematical compatibility to complex 3D torsion and multi-segment TACRs. 
 
 Our future work aims at the development of a shape control law (e.g., tip tracking) based on the virtual reduced routing and the segregated static model, followed by the experimental validation of the developed shape control law.
@@ -73,7 +75,6 @@ If you find this theory or method helpful for your continuum/soft robotics resea
   note    = {Chapter 4: {\'E}limination et analyse de la redondance d'actionnement}
 }
 ```
-
 ---
 
 ## Appendix
