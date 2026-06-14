@@ -24,9 +24,8 @@ While historical methods (such as Clarke Transform-based reduction [1]) work wel
 ---
 
 ## 🚀 Key Contributions & Methodology
-To bridge this gap, buding upon the work of [2], our work introduces a unified mathematical framework using **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$). This framework enables a **Dimension Reduction:**, where the redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system. In addition, this framework remains compatitble with 3D complex routing paths and 3D trosion. It captures 3D complex deformations (bending + twisting), unlocking capabilities where classical methods [1] fail. Meanwhile, by eliminating internal tension redundancies during iterative solver steps, the simulation speed is accelerated by approximately **500%**, facilitating real-time closed-loop force/position control. Moreover, this framework demonstrated a versatile performance on multi-routing, multi-segment continuum systems. 
 
-Our futur work aims at the developement of a shape control law (for exemple, tip tracking) based on the virtual reduced routing and the segregated static model, and the experimental validation of the developed shape control law.
+To bridge this gap, buding upon the work of [2], our work introduces a unified mathematical framework using **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$). This framework enables a **Dimension Reduction:**, where the redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system. In addition, this framework remains compatitble with 3D complex routing paths and 3D trosion. It captures 3D complex deformations (bending + twisting), unlocking capabilities where classical methods [1] fail. Meanwhile, by eliminating internal tension redundancies during iterative solver steps, the simulation speed is accelerated by approximately **500%**, facilitating real-time closed-loop force/position control. Moreover, this framework demonstrated a versatile performance on multi-routing, multi-segment continuum systems. 
 
 ---
 
@@ -38,7 +37,14 @@ Our futur work aims at the developement of a shape control law (for exemple, tip
 * 
 ---
 
-## Reference
+## 🎯 Conclusion & Future Work
+In conclusion, the proposed SVD-based framework successfully decouples effective actuation from redundant internal tensions, significantly accelerating kinematic simulations and extending mathematical compatibility to complex 3D torsion and multi-segment TACRs. 
+
+Our future work aims at the development of a shape control law (e.g., tip tracking) based on the virtual reduced routing and the segregated static model, followed by the experimental validation of the developed shape control law.
+
+---
+
+## References
 
 [1] R. Grassmann and J. Burgner-Kahrs, "Clarke Coordinates Are Generalized Improved State Parametrization for Continuum Robots" IEEE Robotics and Automation Letters, 2025. 
 
@@ -60,18 +66,13 @@ If you find this theory or method helpful for your continuum/soft robotics resea
 }
 
 @phdthesis{zhang2025modelisation,
-
   author  = {Zhang, Zibo},
-  
   title   = {Mod{\'e}lisation, pr{\'e}diction de forme et {\'e}limination de la redondance d'actionnement dans les robots continus actionn{\'e}s par c{\^a}bles},
-  
   school  = {IMT Atlantique / Universit{\'e} Grenoble Alpes},
-  
   year    = {2025},
-  
   note    = {Chapter 4: {\'E}limination et analyse de la redondance d'actionnement}
-  
 }
+```
 
 ---
 
