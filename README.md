@@ -3,7 +3,7 @@
 [![Venue: ICRA 2026](https://img.shields.io/badge/Venue-IEEE%20ICRA%202026%20Workshop-blue.svg)](https://2026.ieee-icra.org/)
 [![Thesis: Chapter 4](https://img.shields.io/badge/PhD%20Thesis-Chapter%204-red.svg)](https://github.com/zibo-zhang-9)
 
-This repository hosts the core theoretical framework, analytical methods, and presentation materials for the **SVD-based actuation redundancy elimination method**. This work constitutes **Chapter 4** of my PhD dissertation (*Élimination et analyse de la redondance d'actionnement*) and was peer-reviewed and presented as a Workshop Poster at the **IEEE International Conference on Robotics and Automation (ICRA 2026)**, Vienna, Austria.
+This repository hosts the core theoretical framework, analytical methods, and presentation materials for the **SVD-based actuation redundancy elimination method**. This work constitutes **Chapter 4** of my PhD dissertation (*Élimination et analyse de la redondance d'actionnement*) and was peer-reviewed and presented as a Workshop Poster at the **IEEE International Conference on Robotics and Automation (ICRA 2026)**, Vienna, Austria. Workshop theme: _AI-Driven Soft Robotics: Innovations, Challenges, and Future Directions_
 
 ---
 
@@ -21,7 +21,7 @@ While historical methods (such as Clarke-based reduction) work well for symmetri
 
 ---
 
-## 🚀 Core Contributions & Methodology
+## 🚀 Key Contributions & Methodology
 To bridge this gap, this work introduces a unified mathematical framework leveraging **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$):
 
 1. **Exact Dimension Reduction:** The highly redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system.
@@ -61,4 +61,5 @@ If you find this theory or method helpful for your continuum/soft robotics resea
 ---
 
 ## Apprndix
-![IEEE ICRA 2026 Poster Presentation](poster_presentation.png)
+The poster presented during the workshop session:
+![IEEE ICRA 2026 Poster Presentation](./media/IMG_20260601_173947.jpg)
