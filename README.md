@@ -34,8 +34,8 @@ Our futur work aims at the developement of a shape control law (for exemple, tip
 * **Example 1 (single-segment with 3 convergent tendons):** Both Clarke and SVD work for symmetric planar routings.
 * **Example 2 (single-segment with 4 spiral tendons):** Clarke fails for torsion (3D deformation); SVD works for both 2D and 3D.
 * **Example 3 (multi-segment and multi-routing TACR):** Traditional Clarke reduction yielded a **22.33% Max Tip Error** due to missing torsional constraints. Our **SVD Method reduced the Max Tip Error to 0.36%**. SVD provides a general reduction valid for 2D, 3D, and multi-segments, while Clarke is limited to symmetric planar routings.
-* **Real-Time Efficiency:** Forward modeling time reduced drastically, allowing high-frequency embedding.
-
+* **Real-Time Efficiency:** The computational gain of SVD-based reduced routing is about 5× faster than the redundant routing.
+* 
 ---
 
 ## Reference
