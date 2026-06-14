@@ -49,18 +49,13 @@ Our futur work aims at the developement of a shape control law (for exemple, tip
 ## How to Cite
 If you find this theory or method helpful for your continuum/soft robotics research, please cite our workshop paper or the corresponding PhD dissertation chapter:
 
+```bibtex
 @inproceedings{zhang2026svd,
-
   author    = {Zhang, Zibo and Chikhaoui, M. Taha and Lebastard, Vincent and Boyer, Fr{\'e}d{\'e}ric},
-
   title     = {From Redundant Tendon Tensions to Low-Dimensional Actuation Coordinates: A SVD-Based Method for Tendon-Actuated Continuum Robots},
-
   booktitle = {IEEE International Conference on Robotics and Automation (ICRA 2026) Workshop on AI-Driven Soft Robotics: Innovations, Challenges, and Future Directions},
-  
   address   = {Vienna, Austria},
-  
   month     = {June},
-  
   year      = {2026}
 }
 
