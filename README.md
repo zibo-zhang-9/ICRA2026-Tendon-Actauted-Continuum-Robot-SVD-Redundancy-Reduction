@@ -17,12 +17,12 @@ Tendon-Actuated Continuum Robots (TACRs) are inherently **over-actuated**. Due t
 1. **Mathematical Ill-posedness:** Hard to predict unique tendon inputs for shape control.
 2. **Computational Inefficiency:** Extreme overhead in multi-segment and multi-routing forward/inverse kinematic simulations.
 
-While historical methods (such as Clarke-based reduction) work well for symmetric 2D planar robots, they **completely fail when handling 3D complex torsion, large multi-segment deformations, or non-symmetric routings**.
+While historical methods (such as Clarke-based reduction [1]) work well for symmetric 2D planar robots, they **completely fail when handling 3D complex torsion, large multi-segment deformations, or non-symmetric routings**.
 
 ---
 
 ## 🚀 Key Contributions & Methodology
-To bridge this gap, this work introduces a unified mathematical framework leveraging **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$):
+To bridge this gap, this work introduces a unified mathematical framework leveraging **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$) [2]:
 
 1. **Exact Dimension Reduction:** The highly redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system.
 2. **3D Torsion Compatibility:** Proven mathematically and experimentally to seamlessly capture 3D multi-axial deformations (bending + twisting), unlocking capabilities where classical methods fail.
@@ -35,6 +35,12 @@ To bridge this gap, this work introduces a unified mathematical framework levera
 * **Example 1 (Planar Bending):** Achieved sub-millimeter tip tracking precision with unified coordinates.
 * **Example 2 (3D Spiral Torsion):** Traditional Clarke reduction yielded a **22.33% Max Tip Error** due to missing torsional constraints. Our **SVD Method reduced the Max Tip Error to 0.36%**.
 * **Real-Time Efficiency:** Forward modeling time reduced drastically, allowing high-frequency embedding.
+
+---
+
+## Reference
+[1] R. Grassmann and J. Burgner-Kahrs, IEEE Robotics and Automation Letters , 2025. 
+[2] F. Boyer et al., IEEE Transactions on Robotics, 2021.
 
 ---
 
@@ -61,5 +67,5 @@ If you find this theory or method helpful for your continuum/soft robotics resea
 ---
 
 ## Apprndix
-The poster presented during the workshop session:
+The poster presented during the workshop session, on June 1st, at Vienna, Austria:
 ![IEEE ICRA 2026 Poster Presentation](./media/IMG_20260601_173947.jpg)
