@@ -9,7 +9,7 @@ This repository hosts the core theoretical framework, analytical methods, and pr
 
 ## 🖼️ Workshop Poster & Graphical Abstract
 *(提示：请将您的 Poster PDF 转换为一张高分辨率的 poster.png，上传到这个仓库中，然后在这里展示。如果没有图片，可以先删掉这一行)*
-![IEEE ICRA 2026 Poster](Poster_SVD_Actutation_Redundancy_v2.png)
+![IEEE ICRA 2026 Poster](./media/Poster_SVD_Actutation_Redundancy_v2.png)
 
 ---
 
