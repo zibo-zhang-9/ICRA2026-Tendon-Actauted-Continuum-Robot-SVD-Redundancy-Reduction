@@ -48,6 +48,7 @@ To bridge this gap, this work introduces a unified mathematical framework levera
     └── svd_reduction.m     # Core SVD reduction function snippet
 
 
+## How to Cite
 If you find this theory or method helpful for your continuum/soft robotics research, please cite our workshop paper or the corresponding PhD dissertation chapter:
 
 @inproceedings{zhang2026svd,
@@ -66,3 +67,7 @@ If you find this theory or method helpful for your continuum/soft robotics resea
   year    = {2025},
   note    = {Chapter 4: {\'E}limination et analyse de la redondance d'actionnement}
 }
+
+
+## Apprndix
+![IEEE ICRA 2026 Poster Presentation](poster_presentation.png)
