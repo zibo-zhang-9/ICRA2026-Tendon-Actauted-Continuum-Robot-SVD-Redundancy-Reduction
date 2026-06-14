@@ -39,7 +39,9 @@ Our futur work aims at the developement of a shape control law (for exemple, tip
 ---
 
 ## Reference
+
 [1] R. Grassmann and J. Burgner-Kahrs, "Clarke Coordinates Are Generalized Improved State Parametrization for Continuum Robots" IEEE Robotics and Automation Letters, 2025. 
+
 [2]  F. Boyer, V. Lebastard, F. Candelier, and F. Renda, “Dynamics of continuum and soft robots: A strain parameterization based approach,” IEEE Transactions on Robotics, vol. 37, no. 3, pp. 847–863, 2021.
 
 ---
@@ -48,24 +50,38 @@ Our futur work aims at the developement of a shape control law (for exemple, tip
 If you find this theory or method helpful for your continuum/soft robotics research, please cite our workshop paper or the corresponding PhD dissertation chapter:
 
 @inproceedings{zhang2026svd,
+
   author    = {Zhang, Zibo and Chikhaoui, M. Taha and Lebastard, Vincent and Boyer, Fr{\'e}d{\'e}ric},
+
   title     = {From Redundant Tendon Tensions to Low-Dimensional Actuation Coordinates: A SVD-Based Method for Tendon-Actuated Continuum Robots},
+
   booktitle = {IEEE International Conference on Robotics and Automation (ICRA 2026) Workshop on AI-Driven Soft Robotics: Innovations, Challenges, and Future Directions},
+  
   address   = {Vienna, Austria},
+  
   month     = {June},
+  
   year      = {2026}
 }
 
 @phdthesis{zhang2025modelisation,
+
   author  = {Zhang, Zibo},
+  
   title   = {Mod{\'e}lisation, pr{\'e}diction de forme et {\'e}limination de la redondance d'actionnement dans les robots continus actionn{\'e}s par c{\^a}bles},
+  
   school  = {IMT Atlantique / Universit{\'e} Grenoble Alpes},
+  
   year    = {2025},
+  
   note    = {Chapter 4: {\'E}limination et analyse de la redondance d'actionnement}
+  
 }
 
 ---
 
 ## Appendix
+
 The poster presented during the workshop session, on June 1st, at Vienna, Austria:
+
 ![IEEE ICRA 2026 Poster Presentation](./media/IMG_20260601_173947.jpg)
