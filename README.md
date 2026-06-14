@@ -19,7 +19,7 @@ Tendon-Actuated Continuum Robots (TACRs) are inherently **over-actuated**. Due t
 
 2. **Computational Inefficiency:** Overhead in multi-segment and multi-routing forward/inverse kinematic simulations.
 
-While historical methods (such as Clarke-based reduction [1]) work well for symmetric 2D planar robots, they **completely fail when handling 3D complex torsion, large multi-segment deformations, or non-symmetric routings**.
+While historical methods (such as Clarke Transform-based reduction [1]) work well for symmetric 2D planar robots, they **may fail when handling 3D complex torsion or non-symmetric routings in single-/multi-segment**.
 
 ---
 
