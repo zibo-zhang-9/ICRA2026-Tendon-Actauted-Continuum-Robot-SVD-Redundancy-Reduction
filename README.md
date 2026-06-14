@@ -38,15 +38,6 @@ To bridge this gap, this work introduces a unified mathematical framework levera
 
 ---
 
-## 📂 Repository Structure
-```text
-├── README.md               # This project overview
-├── doc/
-│   └── ICRA2026_Poster.pdf # High-quality PDF of the presented workshop poster
-└── src/                    # (提示：后续如果您打算开源算法，可以在此文件夹放置MATLAB/Python核心矩阵转换代码)
-    └── svd_reduction.m     # Core SVD reduction function snippet
-
-
 ## How to Cite
 If you find this theory or method helpful for your continuum/soft robotics research, please cite our workshop paper or the corresponding PhD dissertation chapter:
 
@@ -67,6 +58,7 @@ If you find this theory or method helpful for your continuum/soft robotics resea
   note    = {Chapter 4: {\'E}limination et analyse de la redondance d'actionnement}
 }
 
+---
 
 ## Apprndix
 ![IEEE ICRA 2026 Poster Presentation](poster_presentation.png)
