@@ -26,13 +26,14 @@ While historical methods (such as Clarke Transform-based reduction [1]) work wel
 ## 🚀 Key Contributions & Methodology
 To bridge this gap, buding upon the work of [2], our work introduces a unified mathematical framework using **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$). This framework enables a **Dimension Reduction:**, where the redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system. In addition, this framework remains compatitble with 3D complex routing paths and 3D trosion. It captures 3D complex deformations (bending + twisting), unlocking capabilities where classical methods [1] fail. Meanwhile, by eliminating internal tension redundancies during iterative solver steps, the simulation speed is accelerated by approximately **500%**, facilitating real-time closed-loop force/position control. Moreover, this framework demonstrated a versatile performance on multi-routing, multi-segment continuum systems. 
 
-Our futur work aims at the developement of a shape control law based on the virtual reduced routing and the segregated static model, and the experimental validation of the developed shape control law.
+Our futur work aims at the developement of a shape control law (for exemple, tip tracking) based on the virtual reduced routing and the segregated static model, and the experimental validation of the developed shape control law.
 
 ---
 
 ## 📊 Simulation Results
-* **Example 1 (Planar Bending):** Achieved sub-millimeter tip tracking precision with unified coordinates.
-* **Example 2 (3D Spiral Torsion):** Traditional Clarke reduction yielded a **22.33% Max Tip Error** due to missing torsional constraints. Our **SVD Method reduced the Max Tip Error to 0.36%**.
+* **Example 1 (single-segment with 3 convergent tendons):** Both Clarke and SVD work for symmetric planar routings.
+* **Example 2 (single-segment with 4 spiral tendons):** Clarke fails for torsion (3D deformation); SVD works for both 2D and 3D.
+* **Example 3 (multi-segment and multi-routing TACR):** Traditional Clarke reduction yielded a **22.33% Max Tip Error** due to missing torsional constraints. Our **SVD Method reduced the Max Tip Error to 0.36%**. SVD provides a general reduction valid for 2D, 3D, and multi-segments, while Clarke is limited to symmetric planar routings.
 * **Real-Time Efficiency:** Forward modeling time reduced drastically, allowing high-frequency embedding.
 
 ---
@@ -65,6 +66,6 @@ If you find this theory or method helpful for your continuum/soft robotics resea
 
 ---
 
-## Apprndix
+## Appendix
 The poster presented during the workshop session, on June 1st, at Vienna, Austria:
 ![IEEE ICRA 2026 Poster Presentation](./media/IMG_20260601_173947.jpg)
