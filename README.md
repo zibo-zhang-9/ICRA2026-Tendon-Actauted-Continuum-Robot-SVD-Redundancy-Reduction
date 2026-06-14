@@ -46,3 +46,23 @@ To bridge this gap, this work introduces a unified mathematical framework levera
 │   └── ICRA2026_Poster.pdf # High-quality PDF of the presented workshop poster
 └── src/                    # (提示：后续如果您打算开源算法，可以在此文件夹放置MATLAB/Python核心矩阵转换代码)
     └── svd_reduction.m     # Core SVD reduction function snippet
+
+
+If you find this theory or method helpful for your continuum/soft robotics research, please cite our workshop paper or the corresponding PhD dissertation chapter:
+
+@inproceedings{zhang2026svd,
+  author    = {Zhang, Zibo and Chikhaoui, M. Taha and Lebastard, Vincent and Boyer, Fr{\'e}d{\'e}ric},
+  title     = {From Redundant Tendon Tensions to Low-Dimensional Actuation Coordinates: A SVD-Based Method for Tendon-Actuated Continuum Robots},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA 2026) Workshop on AI-Driven Soft Robotics: Innovations, Challenges, and Future Directions},
+  address   = {Vienna, Austria},
+  month     = {June},
+  year      = {2026}
+}
+
+@phdthesis{zhang2025modelisation,
+  author  = {Zhang, Zibo},
+  title   = {Mod{\'e}lisation, pr{\'e}diction de forme et {\'e}limination de la redondance d'actionnement dans les robots continus actionn{\'e}s par c{\^a}bles},
+  school  = {IMT Atlantique / Universit{\'e} Grenoble Alpes},
+  year    = {2025},
+  note    = {Chapter 4: {\'E}limination et analyse de la redondance d'actionnement}
+}
