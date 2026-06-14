@@ -24,12 +24,7 @@ While historical methods (such as Clarke Transform-based reduction [1]) work wel
 ---
 
 ## 🚀 Key Contributions & Methodology
-To bridge this gap, buding upon the work of [2], our work introduces a unified mathematical framework leveraging **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$):
-
-1. **Exact Dimension Reduction:** The highly redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system.
-2. **3D Torsion Compatibility:** Proven mathematically and experimentally to seamlessly capture 3D multi-axial deformations (bending + twisting), unlocking capabilities where classical methods fail.
-3. **~5x Computational Speedup:** By eliminating internal tension redundancies during iterative solver steps, the simulation speed is accelerated by approximately **500%**, facilitating real-time closed-loop force/position control.
-4. **Multi-Segment Scalability:** Demonstrated versatile performance on multi-routing, multi-segment continuum systems under intense physical boundaries.
+To bridge this gap, buding upon the work of [2], our work introduces a unified mathematical framework using **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$). This framework enables a **Dimension Reduction:**, where the redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system. In addition, this framework remains compatitble with 3D complex routing paths and 3D trosion. It captures 3D complex deformations (bending + twisting), unlocking capabilities where classical methods [1] fail. Meanwhile, by eliminating internal tension redundancies during iterative solver steps, the simulation speed is accelerated by approximately **500%**, facilitating real-time closed-loop force/position control. Moreover, this framework demonstrated a versatile performance on multi-routing, multi-segment continuum systems.
 
 ---
 
