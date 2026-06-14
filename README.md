@@ -24,11 +24,13 @@ While historical methods (such as Clarke Transform-based reduction [1]) work wel
 ---
 
 ## 🚀 Key Contributions & Methodology
-To bridge this gap, buding upon the work of [2], our work introduces a unified mathematical framework using **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$). This framework enables a **Dimension Reduction:**, where the redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system. In addition, this framework remains compatitble with 3D complex routing paths and 3D trosion. It captures 3D complex deformations (bending + twisting), unlocking capabilities where classical methods [1] fail. Meanwhile, by eliminating internal tension redundancies during iterative solver steps, the simulation speed is accelerated by approximately **500%**, facilitating real-time closed-loop force/position control. Moreover, this framework demonstrated a versatile performance on multi-routing, multi-segment continuum systems.
+To bridge this gap, buding upon the work of [2], our work introduces a unified mathematical framework using **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$). This framework enables a **Dimension Reduction:**, where the redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system. In addition, this framework remains compatitble with 3D complex routing paths and 3D trosion. It captures 3D complex deformations (bending + twisting), unlocking capabilities where classical methods [1] fail. Meanwhile, by eliminating internal tension redundancies during iterative solver steps, the simulation speed is accelerated by approximately **500%**, facilitating real-time closed-loop force/position control. Moreover, this framework demonstrated a versatile performance on multi-routing, multi-segment continuum systems. 
+
+Our futur work aims at the developement of a shape control law based on the virtual reduced routing and the segregated static model, and the experimental validation of the developed shape control law.
 
 ---
 
-## 📊 Key Results (Sim2Real Validation)
+## 📊 Simulation Results
 * **Example 1 (Planar Bending):** Achieved sub-millimeter tip tracking precision with unified coordinates.
 * **Example 2 (3D Spiral Torsion):** Traditional Clarke reduction yielded a **22.33% Max Tip Error** due to missing torsional constraints. Our **SVD Method reduced the Max Tip Error to 0.36%**.
 * **Real-Time Efficiency:** Forward modeling time reduced drastically, allowing high-frequency embedding.
