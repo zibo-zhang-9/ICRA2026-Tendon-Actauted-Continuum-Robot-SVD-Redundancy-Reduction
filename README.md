@@ -39,7 +39,7 @@ To bridge this gap, this work introduces a unified mathematical framework levera
 ---
 
 ## Reference
-[1] R. Grassmann and J. Burgner-Kahrs, IEEE Robotics and Automation Letters , 2025. 
+[1] R. Grassmann and J. Burgner-Kahrs, "Clarke Coordinates Are Generalized Improved State Parametrization for Continuum Robots" IEEE Robotics and Automation Letters, 2025. 
 [2]  F. Boyer, V. Lebastard, F. Candelier, and F. Renda, “Dynamics of continuum and soft robots: A strain parameterization based approach,” IEEE Transactions on Robotics, vol. 37, no. 3, pp. 847–863, 2021.
 
 ---
