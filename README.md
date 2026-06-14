@@ -24,7 +24,7 @@ While historical methods (such as Clarke Transform-based reduction [1]) work wel
 ---
 
 ## 🚀 Key Contributions & Methodology
-To bridge this gap, this work introduces a unified mathematical framework leveraging **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$) [2]:
+To bridge this gap, buding upon the work of [2], our work introduces a unified mathematical framework leveraging **Singular Value Decomposition (SVD)** integrated with **Cosserat Rod Theory** and Lie groups ($SE(3)$):
 
 1. **Exact Dimension Reduction:** The highly redundant, high-dimensional physical tendon tension space is projectively mapped into a minimal, non-redundant, low-dimensional virtual actuation coordinate system.
 2. **3D Torsion Compatibility:** Proven mathematically and experimentally to seamlessly capture 3D multi-axial deformations (bending + twisting), unlocking capabilities where classical methods fail.
